@@ -1,3 +1,4 @@
+//请在本地文件夹下创建config.js保存自己的apikey，比如：export const myAPIkey = "123";
 import { myAPIkey } from "./config";
 
 //关于api的更多信息请参考：https://openweathermap.org/api 

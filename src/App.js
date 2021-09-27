@@ -9,7 +9,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Weather Forecast Website</h1>
       </header>
-        <InputBox />    
+      <main>
+        <div className="input-field">
+          <InputBox className="city-input"/> 
+        </div>
+      </main> 
     </div>
   );
 }

@@ -1,17 +1,11 @@
 .App {
-  color: rgb(19, 17, 17);
+  display: block;
 }
 
 .App-logo {
   height: 10vmin;
   margin: 2vmin;
   align-items: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: ease-in infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,7 +18,12 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-body {
-  min-height: 100vh;
+.input-field {
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
 }
 
+main {
+  display: flex;
+}

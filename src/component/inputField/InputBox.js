@@ -1,23 +1,42 @@
 import React from "react";
-import { AutoComplete } from 'antd';
 import 'antd/dist/antd.css';
+import { Input, Button } from 'antd';
 
-const options = [
-    {value: 'Beijing'},
-    {value: 'Shanghai'},
-    {value: 'Xian'},
-    {value: 'London'}
-];
+export class InputBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: 'London'};
 
-export const InputBox = () => (
-<AutoComplete
-    style={{
-        width: 200,
-    }}
-    options={options}
-    placeholder="try to type Beijing "
-    filterOption={(inputValue, option) =>
-      option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
-    }
-  />
-);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('City Name Submitted：' + this.state.value);
+  }
+
+  render() {
+    return (
+      <div className="inputbox">
+        <p>Please search your City's weather here.</p>
+        <Input
+          id="input-city-name"
+          placeholder="Please type in your City's name."
+          defaultValue="London"
+          allowClear
+          onChange={this.handleChange}
+          onPressEnter={this.handleSubmit}
+        />
+        <Button 
+          type="primary"
+          htmlType="submit"
+          onClick={this.handleSubmit}
+        >Check Weather</Button>
+      </div>
+    );
+  }
+};
