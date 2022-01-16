@@ -1,26 +1,5 @@
 .App {
-  position: relative;
-  top: 20px;
-}
-
-.App-logo {
-  height: 3rem;
-  width: 3rem;
-  align-items: center;
-}
-
-.App-header {
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.App-header h1 {
-  line-height: 3rem;
+  /* position: relative; */
 }
 
 .input-field {

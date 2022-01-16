@@ -1,0 +1,24 @@
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EBF4FA;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+  margin: 0;
+}
+
+h1 {
+  line-height: 5rem;
+  font-size: 2rem;
+  margin: 0 2rem 0 1rem;
+}
+
+.subTitle {
+  font-size: 14px;
+  line-height: 5rem;
+  margin: 0;
+}
